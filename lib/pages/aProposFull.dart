@@ -37,7 +37,7 @@ class _AProposFullState extends State<AProposFull> {
               height: 10,
             ),
             Text(
-              'Le Pourquoi',
+              'About Us',
               style: TextStyle(
                   color: textColor, fontFamily: 'secular', fontSize: 40),
               textAlign: TextAlign.center,

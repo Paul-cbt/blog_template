@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
+import 'package:flutter_lorem/flutter_lorem.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:BlogTemplate/shared/constants.dart';
 import 'package:BlogTemplate/shared/theme.dart';
@@ -188,7 +189,7 @@ class _ContactPageState extends State<ContactPage> {
                       ),
                       Expanded(
                           child: Text(
-                        '\tQuand vous donnez à LFI Mâle-Alpha, c’est plus qu’une simple association que vous soutenez, c\'est tout un réseau qui accompagne, aide, lie, et soutient les hommes à travers le monde',
+                        '    ' + lorem(paragraphs: 5, words: 60),
                         style: TextStyle(
                             color: textColor,
                             fontFamily: 'sourceCode',
@@ -241,7 +242,7 @@ class _ContactPageState extends State<ContactPage> {
         Spacer(),
         InkWell(
             onTap: () {
-              launchUrlString('https://github.com/Paul-cbt/BlogTemplate');
+              launchUrlString('https://github.com/Paul-cbt/blog_template');
             },
             child: Text(
               'Access source code',

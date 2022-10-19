@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:BlogTemplate/pages/aProposFull.dart';
 import 'package:BlogTemplate/shared/constants.dart';
 import 'package:BlogTemplate/shared/theme.dart';
+import 'package:flutter_lorem/flutter_lorem.dart';
 
 class AProposPage extends StatefulWidget {
   const AProposPage({super.key});
@@ -50,7 +51,7 @@ class _AProposPageState extends State<AProposPage> {
                         child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: Text(
-                        '\tDans le monde fallacieux dans lequel nous vivions, Dr Jacques Louis Morel, expert en sociologie du genre avec plus de 20 ans d’expérience ainsi que, M Isaac White, ex-trader ayant pris une retraite anticipée, se battent dans le but de préserver les droits de l’homme.',
+                        lorem(paragraphs: 1),
                         style: TextStyle(
                             color: textColor,
                             fontFamily: 'sourceCode',
@@ -76,7 +77,7 @@ class _AProposPageState extends State<AProposPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Qui sommes nous?',
+                      'About us',
                       style: TextStyle(
                           color: textColor,
                           fontFamily: 'secular',
@@ -153,7 +154,7 @@ class _AProposPageState extends State<AProposPage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'LFI Mâle-Alpha',
+                                'THE BLOG',
                                 style: TextStyle(
                                     color: textColor,
                                     fontFamily: 'secular',
@@ -163,7 +164,7 @@ class _AProposPageState extends State<AProposPage> {
                                 height: 20,
                               ),
                               Text(
-                                '\t Jadis, un Homme était reconnu pour son pouvoir, son charisme, sa richesse et son statut. Les meilleurs, les plus puissants, gouvernaient le monde. Pendant des siècle, les Hommes bâtirent un patrimoine culturel et architectural qui pour une partie persiste encore à ce jour. Cependant...',
+                                '   ' + lorem(paragraphs: 1, words: 50) + '...',
                                 style: TextStyle(
                                     color: textColor,
                                     fontFamily: 'sourceCode',
