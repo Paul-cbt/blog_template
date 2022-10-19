@@ -56,7 +56,7 @@ class _AProposFullState extends State<AProposFull> {
                   ? 800
                   : MediaQuery.of(context).size.width - 200,
               child: Text(
-                lorem(paragraphs: 5),
+                lorem(paragraphs: 5, words: 300),
                 style: TextStyle(
                     color: secondarytextColor,
                     fontFamily: 'sourceCode',

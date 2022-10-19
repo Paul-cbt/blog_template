@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'LFI Male-Alpha',
+      title: 'THE BLOG',
       theme: ThemeData(primaryColor: darkGrey),
       home: const Home(),
     );

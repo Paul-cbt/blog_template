@@ -15,6 +15,8 @@ class AProposPage extends StatefulWidget {
 
 class _AProposPageState extends State<AProposPage> {
   double margin = 5;
+  String aboutUsText = lorem(paragraphs: 1, words: 40);
+  String aboutLongText = '   ' + lorem(paragraphs: 1, words: 50) + '...';
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +53,7 @@ class _AProposPageState extends State<AProposPage> {
                         child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: Text(
-                        lorem(paragraphs: 1),
+                        aboutUsText,
                         style: TextStyle(
                             color: textColor,
                             fontFamily: 'sourceCode',
@@ -164,7 +166,7 @@ class _AProposPageState extends State<AProposPage> {
                                 height: 20,
                               ),
                               Text(
-                                '   ' + lorem(paragraphs: 1, words: 50) + '...',
+                                aboutLongText,
                                 style: TextStyle(
                                     color: textColor,
                                     fontFamily: 'sourceCode',

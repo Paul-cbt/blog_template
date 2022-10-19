@@ -32,7 +32,7 @@ class _VerticalNavBarState extends State<VerticalNavBar> {
           child: RotatedBox(
             quarterTurns: 1,
             child: Text(
-              'Acceuil',
+              'Home',
               style: TextStyle(
                   color: page == 0 ? textColor : lightGrey,
                   fontFamily: 'secular',
@@ -70,7 +70,7 @@ class _VerticalNavBarState extends State<VerticalNavBar> {
           child: RotatedBox(
             quarterTurns: 1,
             child: Text(
-              'À propos',
+              'About',
               style: TextStyle(
                   color: page == 2 ? textColor : lightGrey,
                   fontFamily: 'secular',

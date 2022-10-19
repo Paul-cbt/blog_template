@@ -14,7 +14,7 @@ class SubTitleBuilder extends StatefulWidget {
 
 class _SubTitleBuilderState extends State<SubTitleBuilder> {
   List<String> adjectfis =
-      'Incapables/Inacceptables/Inabordables/Imprevisibles/Impulsives/Indécises/Imatures/Immorales'
+      'The Best Blog/Most usefull Blog/Most interesting Blog/The free Blog'
           .split('/');
 
   int _currentPage = 999;
@@ -24,7 +24,6 @@ class _SubTitleBuilderState extends State<SubTitleBuilder> {
   );
   @override
   void initState() {
-    adjectfis.addAll(['Insuportables', 'Inbuvables']);
     _timer = Timer.periodic(const Duration(milliseconds: 2000), (timer) {
       _currentPage++;
       _pageController.animateToPage(
@@ -48,26 +47,20 @@ class _SubTitleBuilderState extends State<SubTitleBuilder> {
       mainAxisSize: MainAxisSize.min,
       children: [
         SizedBox(
-          height: 30,
-          child: Text(
-            'Les Femmes ',
-            style: TextStyle(
-                color: textColor, fontFamily: 'sourceCode', fontSize: 15),
-          ),
-        ),
-        SizedBox(
-          width: 150,
+          width: 200,
           height: 30,
           child: PageView.builder(
             controller: _pageController,
             physics: NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) => Text(
-                adjectfis[index % adjectfis.length],
-                style: TextStyle(
-                    color: textColor, fontFamily: 'sourceCode', fontSize: 15)),
+              adjectfis[index % adjectfis.length],
+              style: TextStyle(
+                  color: textColor, fontFamily: 'sourceCode', fontSize: 15),
+              textAlign: TextAlign.center,
+            ),
             scrollDirection: Axis.vertical,
           ),
-        )
+        ),
       ],
     );
   }

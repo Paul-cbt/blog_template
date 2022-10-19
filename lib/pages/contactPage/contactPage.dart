@@ -17,6 +17,7 @@ class ContactPage extends StatefulWidget {
 }
 
 class _ContactPageState extends State<ContactPage> {
+  String donateText = '    ' + lorem(paragraphs: 1, words: 35);
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -189,7 +190,7 @@ class _ContactPageState extends State<ContactPage> {
                       ),
                       Expanded(
                           child: Text(
-                        '    ' + lorem(paragraphs: 5, words: 60),
+                        donateText,
                         style: TextStyle(
                             color: textColor,
                             fontFamily: 'sourceCode',

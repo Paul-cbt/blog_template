@@ -31,7 +31,7 @@ class _ArticleOverviewPageState extends State<ArticleOverviewPage> {
                     isClickable: true,
                     subtitle: ''),
                 ArticleWidget(
-                    assetPath: 'adrien.jpg',
+                    assetPath: 'image5.jpeg',
                     title: 'Article title 2',
                     author: 'P. Caubet',
                     titleOffset: 100,
