@@ -21,11 +21,6 @@ class _HomeState extends State<Home> {
   int page = 0;
   @override
   Widget build(BuildContext context) {
-    // precacheImage(AssetImage('sigma.jpeg'), context);
-    // precacheImage(AssetImage('adrien.jpg'), context);
-    // precacheImage(AssetImage('alpha.jpg'), context);
-    // precacheImage(AssetImage('court.jpg'), context);
-    // precacheImage(AssetImage('car.jpeg'), context);
     return Scaffold(
       body: MediaQuery.of(context).size.width < 1000
           ? Container(
@@ -112,7 +107,7 @@ class _HomeState extends State<Home> {
                               curve: Curves.easeInOut);
                         },
                         child: Text(
-                          'LFI',
+                          'B',
                           style: TextStyle(
                               color: textColor,
                               fontFamily: 'secular',
@@ -158,7 +153,7 @@ class _HomeState extends State<Home> {
                                       curve: Curves.easeInOut);
                                 },
                                 child: Text(
-                                  'À propos',
+                                  'About',
                                   style: TextStyle(
                                       color: textColor,
                                       fontFamily: 'sourceCode',
